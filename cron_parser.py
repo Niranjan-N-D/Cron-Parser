@@ -35,7 +35,7 @@ def expand_cron_field(field_expr, field_name):
         else:  # single value
             result.add(int(part))
 
-    # ✅ Validate numbers are within allowed limits
+    #  Validate numbers are within allowed limits
     for val in result:
         if val < start or val > end:
             raise ValueError(
